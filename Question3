@@ -1,0 +1,20 @@
+fun main () {
+    println(ToRemove("Great Nigeria Great"))
+
+
+}
+fun ToRemove(remainder: String) : String{
+    val apha = StringBuilder()
+    for(gh in remainder){
+        if(gh != 'A' && gh!= 'a'
+            &&gh != 'E' && gh!= 'e'
+            &&gh != 'I' && gh!= 'i'
+            &&gh != 'O' && gh!= 'o'
+            &&gh != 'U' && gh!= 'u'
+        )
+         {
+            apha.append(gh)
+         }
+    }
+    return  apha.toString()
+}
